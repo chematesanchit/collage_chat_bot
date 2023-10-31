@@ -9,7 +9,10 @@ from langchain.llms import OpenAI
 from langchain.chains import ConversationalRetrievalChain
 from langchain.document_loaders import PyPDFLoader
 
-os.environ["OPENAI_API_KEY"] = "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"
+# os.environ["OPENAI_API_KEY"] = "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"
+
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+
 
 # Set persist directory
 persist_directory = 'db'

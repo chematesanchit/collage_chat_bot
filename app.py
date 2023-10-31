@@ -14,8 +14,9 @@ import openai
 
 
 # Set OpenAI API key
-os.environ["OPENAI_API_KEY"] = "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"
-openai.api_key = os.environ["OPENAI_API_KEY"]
+
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+
 
 st.header("RaisoniInfoBot: Chatting with RaisoniInfoBot")
 

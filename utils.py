@@ -7,10 +7,10 @@ import requests
 import tiktoken
 import streamlit as st
 
-os.environ["OPENAI_API_KEY"] = "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"
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
-os.environ["PINECONE_API_KEY"] = "60ae3974-52d3-41f2-88bb-1d80a6ba8ce2"
 
+PINE_API_KEY = st.secrets["PINE_API_KEY"]
 
 pinecone_endpoint = "https://kotak-e25db42.svc.us-west1-gcp-free.pinecone.io"
 
